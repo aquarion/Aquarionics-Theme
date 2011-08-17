@@ -16,6 +16,9 @@ if ( function_exists('register_sidebar') ) {
 	));
 }
 
+
+register_sidebars(4, array('name'=>'Basebar %d'));
+
 // This theme uses post thumbnails
 add_theme_support( 'post-thumbnails' );
 

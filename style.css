@@ -1,10 +1,10 @@
 /*
-Theme Name: Glossy Stylo
+Theme Name: Glossy Stylo, Aquarionics variant
 Theme URI: http://www.gutscheingiraffe.com/stylo-theme/
 Description: The Glossy Stylo Theme for Wordpress 3.0 is a colorful theme with nice transparency effects. Add your own background-image through the WordPress admin. 2-column layout and widget-ready sidebar.
-Version: 1.0.4
-Author: aliwkbg
-Author URI: http://www.gutscheingiraffe.com/
+Version: 1.0.4.1
+Author: aliwkbg, aquarion
+Author URI: http://www.gutscheingiraffe.com/ & http://www.aquarionics.com
 Tags: custom-background, sticky-post, theme-options, dark
 
 The CSS, XHTML and design is released under GPL:
@@ -12,28 +12,33 @@ http://www.opensource.org/licenses/gpl-license.php
 
 */
 
+
 body {
-	font-size: 62.5%; 
-	font-family: Arial, Sans-Serif; 
 	background-color:#000;
 	color: #333;
 	background-attachment:fixed;
 	background-image:url(images/bg.jpg);
-	margin: 0 0 20px 0;
+	margin: 0 0 0 0;
 	padding: 0;
+	font-family: sans-serif;
 	}
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2em;
+}
 
 #content {
 	font-size: 1.2em;
 	}
 
 .widecolumn .entry p {
-	font-size: 1.05em;
 	}
 
 .narrowcolumn .entry, .widecolumn .entry {
-	line-height: 1.4em;
 	}
 
 .widecolumn {
@@ -44,12 +49,14 @@ body {
 	text-align: left;
 	}
 
+/*
 .thread-alt {
 	background-color: #f8f8f8;
 }
 .thread-even {
 	background-color: white;
 }
+
 .depth-1 {
 border: 1px solid #ddd;
 }
@@ -62,23 +69,42 @@ border: 1px solid #ddd;
 h3#comments    {
 	color:#fff;
 }
+*/
 	
 #footer {
-	padding: 0;
+	padding: 20px 0 0 0;
 	margin: 0;
-	width: 748px;
 	clear: both;
-	color:#444;
-	text-align:right;
+	background: #444;
+	color:#FFF;
+	width: 100%;
 	}
-	
-#footer a:link, #footer a:visited {
-	color:#444;
+
+#footer a {
+    color: #FFF;
+    text-decoration: underline;
 }
- 
+
+#footer ul, #footer li {
+    list-style: none;
+    color: #FFF;
+}
+
+#footer h2 {
+    color: #FFF;
+}
+
+#footer p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.basebar {
+    width: 25%;
+    float: left;
+}
 
 small {
-	font-family: Arial, Helvetica, Sans-Serif;
 	font-size: 0.9em;
 	line-height: 1.5em;
 	}
@@ -88,17 +114,6 @@ small {
 	text-align: left;
 	}
 	
-#respond {
- 	color:#fff;	
-}
-
-#respond h3 {
-	color:#fff;
-}
-
-#respond a:link, #respond a:visited {
-	color:#fff;
-}
 
 h2 {
 	font-size: 28px;
@@ -122,7 +137,6 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	}
 
 #sidebar h2 {
-	font-family: 'Lucida Grande', Verdana, Sans-Serif;
 	font-size: 1.2em;
 	}
 
@@ -142,6 +156,7 @@ h3 {
 	padding-top: 0px;
 	}
 
+/*
 .commentlist li, #commentform input, #commentform textarea {
 	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	}
@@ -153,6 +168,8 @@ h3 {
 	font-weight: bold;
 }
 
+*/
+
 .commentlist li .avatar { 
 	float: right;
 	border: 1px solid #eee;
@@ -163,17 +180,14 @@ h3 {
 .commentlist cite, .commentlist cite a {
 	font-weight: bold;
 	font-style: normal;
-	font-size: 1.1em;
 	}
 
 .commentlist p {
 	font-weight: normal;
-	line-height: 1.5em;
 	text-transform: none;
 	}
 
 #commentform p {
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	}
 
 .commentmetadata {
@@ -181,7 +195,6 @@ h3 {
 	}
 
 #sidebar {
-	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
 	}
 
 small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
@@ -217,7 +230,7 @@ a:hover {
 	}
 
 #wp-calendar caption {
-	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font: bold 1.3em;
 	text-align: center;
 	}
 
@@ -259,6 +272,7 @@ a:hover {
 	width: 750px;
 	}
 
+/*
 .post {
 	background-image:url(images/post.png);
 	background-repeat:repeat-y;
@@ -268,7 +282,22 @@ a:hover {
 	width:695px;
 	
 	}
+#postfooter  {
+	height:23px;
+	width:100%; 
+	margin:0px;
+	background-image:url(images/postfooter.png);
+	background-repeat:no-repeat;
+	}
 	
+#postheader {
+	height:26px;
+	width:100%; 
+	margin-bottom:0px;
+	background-image:url(images/postheader.png);
+	background-repeat:no-repeat;
+	}
+*/
 	
 #searchpost {
 	background-image:url(images/post.png);
@@ -291,21 +320,6 @@ a:hover {
 	font-size:18px;
 	}
 
-#postfooter  {
-	height:23px;
-	width:100%; 
-	margin:0px;
-	background-image:url(images/postfooter.png);
-	background-repeat:no-repeat;
-	}
-	
-#postheader {
-	height:26px;
-	width:100%; 
-	margin-bottom:0px;
-	background-image:url(images/postheader.png);
-	background-repeat:no-repeat;
-	}
 	
 .post hr {
 	display: block;
@@ -352,29 +366,28 @@ h1 {
 h1 {
 	font-size: 53px;
 	text-align: left;
-	text-transform:uppercase;
 	}
 
 	
 h1  {
  	color:white;
-	font-family:arial;
 	margin-top:0;
 	text-decoration:none;
 	}
 	
-h1 a, h1 a:hover, h1 a:visited {
- 	color:white;
-	display:inline-block;
-	font-family:arial;
-	text-decoration:none;
-	}
+
+#headerimg h1 {
+    font-weight: normal;
+}
+
+#headerimg h1 a {
+    color: white;
+}
 
 #headerimg .description {
  	color:white;
 	display:inline-block;
 	padding:0px;
-	font-family:arial;
 	text-decoration:none;
 	}
 	
@@ -398,19 +411,13 @@ h2, h2 a, h2 a:visited{
 	padding: 0;
 	}
 
-h3 {
-	clear:both;
-	padding:30px 0 0;
-	}
 
 h3.comments {
 	padding: 0;
-	margin: 40px auto 20px ;
+	/*margin: 40px auto 20px ;*/
 	}
 	
 .comments {
-	width:740px;
-	padding-left:10px;
 }
 
 p img {
@@ -582,8 +589,6 @@ select {
 	list-style-image:none;
 	list-style-position:outside;
 	list-style-type:none;
-	margin:15px 0 10px;
-	padding:10px 20px;
 	}
 .commentlist li ul li { 
 	margin-right: -5px;
@@ -619,25 +624,12 @@ select {
 }
 
 #sidebarinner {
-	background-image:url(images/sidebar.png);
-	background-repeat:repeat-y;
-	margin-left:0; 
-	padding-left:22px;
-	padding-right:33px;
 	}
 	
 #sidebarhead {
-	background-image:url(images/sidebarheader.png);
-	background-repeat:repeat-y;
-	margin-left:0;
-	height:19px;
 	}
 	
 #sidebarfooter {
-	background-image:url(images/sidebarfooter.png);
-	background-repeat:repeat-y;
-	margin-left:0;
-	height:19px;
 	}
 
 #sidebar form {
@@ -724,6 +716,7 @@ a img {
 	padding-left:20px;
 	padding-right:20px;
 	text-align:center;
+	height: 1.2em;
 	}
 	
 .navigation a:link, .navigation a:visited {
@@ -761,4 +754,12 @@ div.aligncenter {
 	line-height: 17px;
 	padding: 0 4px 5px;
 	margin: 0;
+}
+
+.roundedbox {
+    background: rgba(255,255,255,.8);
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    margin: 10px 0 10px 0;
 }
