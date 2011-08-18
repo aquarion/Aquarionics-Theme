@@ -38,7 +38,7 @@
 			</div> <!-- .navigation -->
 <?php endif; // check for comment navigation ?>
 
-			<ol class="commentlist roundedbox">
+			<ol class="commentlist">
 				<?php wp_list_comments(); ?>
 			</ol>
 

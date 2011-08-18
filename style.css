@@ -2,7 +2,7 @@
 Theme Name: Glossy Stylo, Aquarionics variant
 Theme URI: http://www.gutscheingiraffe.com/stylo-theme/
 Description: The Glossy Stylo Theme for Wordpress 3.0 is a colorful theme with nice transparency effects. Add your own background-image through the WordPress admin. 2-column layout and widget-ready sidebar.
-Version: 1.0.4.1
+Version: 1.0.4.2
 Author: aliwkbg, aquarion
 Author URI: http://www.gutscheingiraffe.com/ & http://www.aquarionics.com
 Tags: custom-background, sticky-post, theme-options, dark
@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #content {
-	font-size: 1.2em;
+	font-size: 1.0em;
 	}
 
 .widecolumn .entry p {
@@ -75,7 +75,7 @@ h3#comments    {
 	padding: 20px 0 0 0;
 	margin: 0;
 	clear: both;
-	background: #444;
+	background: rgba(100,100,100,.8);
 	color:#FFF;
 	width: 100%;
 	}
@@ -100,8 +100,10 @@ h3#comments    {
 }
 
 .basebar {
-    width: 25%;
+    width: 20%;
     float: left;
+    overflow: hidden;
+    padding-left: 1em;
 }
 
 small {
@@ -110,7 +112,7 @@ small {
 	}
 
 #headerimg .description {
-	font-size: 1.8em;
+	font-size: 1.1em;
 	text-align: left;
 	}
 	
@@ -455,8 +457,6 @@ img.alignleft {
 	}
 	
 .post-edit-link {
-	clear: both;
-	display: block;
 }
 
 #content p, #content ul, #content ol, #content dd, #content pre, #content hr {
@@ -711,7 +711,7 @@ a img {
 	}
 
 .navigation {
-	color:#FFFFFF;
+	color:#000;
 	display:block;
 	padding-left:20px;
 	padding-right:20px;
@@ -720,7 +720,7 @@ a img {
 	}
 	
 .navigation a:link, .navigation a:visited {
-	color:#fff;
+	color:#000;
 	}
 
 
@@ -756,10 +756,14 @@ div.aligncenter {
 	margin: 0;
 }
 
-.roundedbox {
+.roundedbox, .commentlist li {
     background: rgba(255,255,255,.8);
     border-radius: 20px;
     color: black;
     padding: 10px;
     margin: 10px 0 10px 0;
+}
+
+.commentlist {
+	margin-left: 1em;
 }

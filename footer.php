@@ -27,7 +27,9 @@
 		 * however you like to.
 		*/
 		?>
-		<?php bloginfo('name'); ?><?php if(is_home() and !is_paged()) { ?>| Design started with <a href="http://www.gutscheingiraffe.com/" title="Gutscheincode - Gutscheingiraffe">Gutscheincode <?php echo date('Y'); ?></a><?php } ?>, but has been utterly broken and reformed since then.
+		<?php bloginfo('name'); ?><?php if(is_home() and !is_paged()) { ?> Design started with <a href="http://www.gutscheingiraffe.com/" title="Gutscheincode - Gutscheingiraffe">Gutscheincode <?php echo date('Y'); ?></a><?php } ?>, but has been utterly broken and reformed since then.<br/>
+		<p>All content not otherwise attributed &copy; Nicholas Avenell 1999 to <?PHP echo date('Y') ?></p>
+		<p>Background image from Morguefile.com</p>
 		<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
 	</p>
 		<?php wp_footer(); ?>
