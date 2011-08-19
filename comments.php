@@ -39,7 +39,24 @@
 <?php endif; // check for comment navigation ?>
 
 			<ol class="commentlist">
-				<?php wp_list_comments(); ?>
+<?php 
+
+foreach ($comments as $comment) : ?>
+<li <?php echo $oddcomment; ?>id="comment-<?php comment_ID() ?>">
+<cite>
+<?php echo get_avatar(get_comment_author_email(), 64) ?>
+<span class="author"><?php comment_author_link() ?></span><br /><span class="time"><?php comment_time() ?></span> on <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?></a> <?php edit_comment_link('edit','&nbsp;&nbsp;',''); ?>
+</cite>
+<div class="commenttext"><?php comment_text() ?></div>
+<?php if ($comment->comment_approved == '0') : ?>
+<em>Your comment is awaiting moderation.</em>
+<?php endif; ?>
+</li>
+<?php
+/* Changes every other comment to a different class */
+$oddcomment = ( empty( $oddcomment ) ) ? 'class="alt" ' : '';
+?>
+<?php endforeach; /* end for each comment */ ?>
 			</ol>
 
 <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
