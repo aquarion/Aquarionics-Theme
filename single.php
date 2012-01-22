@@ -11,12 +11,11 @@ get_header();
 			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
 		</div>-->
 		
-				<div id="postbg">
-				<div id="postheader"></div>
+				<div class="postbg">
 				
         <hr/>
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<h2><?php the_title(); ?></h2>
+			<h2 class="posttitle"><?php the_title(); ?></h2>
 
 			<div class="entry roundedbox">
 				<?php the_content('<p class="serif">Read the rest of this entry &raquo;</p>'); ?>
@@ -25,7 +24,7 @@ get_header();
 				<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
             </div>
             
-            <div class="roundedbox postmetadata alt">
+            <div class="postmetadata alt">
 						This entry was posted
 						<?php /* This is commented, because it requires a little adjusting sometimes.
 							You'll need to download this plugin, and follow the instructions:
@@ -55,11 +54,12 @@ get_header();
 
 			</div>
 			
+
+	<?php comments_template(); ?>
+	
 			</div>
 			
 		</div>
-
-	<?php comments_template(); ?>
 	</div>
 
 	<?php endwhile; else: ?>

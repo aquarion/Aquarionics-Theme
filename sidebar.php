@@ -1,6 +1,6 @@
 <div id="sidebar" role="complementary">
 	<div id="sidebarhead"></div>
-		<div id="sidebarinner" class="roundedbox">
+		<div id="sidebarinner">
 			<ul>
 				<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 						if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>

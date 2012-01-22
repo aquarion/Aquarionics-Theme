@@ -1,7 +1,7 @@
 /*
 Theme Name: Glossy Stylo, Aquarionics variant
-Theme URI: http://www.gutscheingiraffe.com/stylo-theme/
-Description: The Glossy Stylo Theme for Wordpress 3.0 is a colorful theme with nice transparency effects. Add your own background-image through the WordPress admin. 2-column layout and widget-ready sidebar.
+Theme URI: https://github.com/aquarion/Aquarionics-Theme
+Description: The Glossy Stylo Theme for Wordpress 3.0 is a colorful theme with nice transparency effects. Add your own background-image through the WordPress admin. 2-column layout and widget-ready sidebar. Modified for Aquarionics
 Version: 1.0.4.2
 Author: aliwkbg, aquarion
 Author URI: http://www.gutscheingiraffe.com/ & http://www.aquarionics.com
@@ -80,19 +80,11 @@ h3#comments    {
 	width: 100%;
 	}
 
-#footer a {
-    color: #FFF;
-    text-decoration: underline;
-}
 
 #footer ul, #footer li {
     list-style: none;
-    color: #FFF;
 }
 
-#footer h2 {
-    color: #FFF;
-}
 
 #footer p {
     padding-bottom: 0;
@@ -111,15 +103,37 @@ small {
 	line-height: 1.5em;
 	}
 
+#headerimg { 
+	background: rgba(0,0,64,.6);
+	width: 100%;
+	margin: 0px;
+	border-radius: 7px;
+	padding: 7px;
+	padding-top: 0;
+	margin-top: 50px;
+	width: 750px;
+	text-align: right;
+}
+
+#headerimg  .description {
+}
+#headerimg h1 {
+	text-align: right;
+}
+
+#headerimg h1 a {
+	border: none;
+}
+
 #headerimg .description {
 	font-size: 1.1em;
 	text-align: left;
+	display: block;
 	}
 	
 
-h2 {
+.postbg h2 {
 	font-size: 28px;
-	color:#666; 
 	line-height:30px;
 	}
 
@@ -128,10 +142,6 @@ h2.pagetitle {
 	}
 
 
-
-h3, h3 a, h3 a:visited {
-	color:#000;
-	}
 
 h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
 	text-decoration: none;
@@ -199,7 +209,7 @@ h3 {
 #sidebar {
 	}
 
-small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+#sidebar ul ul li, #sidebar ul ol li {
 	color: #000;
 	}
 
@@ -214,9 +224,14 @@ acronym, abbr, span.caps
 	letter-spacing: .07em;
 	}
 
-a, h2 a:hover, h3 a:hover {
-	color: #4a0000;  
+a {
 	text-decoration:none;
+	border-bottom: 1px dashed;
+	color: inherit;
+}
+
+.entry a {
+	color: #4a0000;  
 	}
 
 a:hover {
@@ -249,17 +264,11 @@ a:hover {
  	}
 
 #header {
-	height:160px;
+	height:120px;
 	margin:0 0 0 1px;
 	padding:0;
 	}
 	
-#headerimg { 
-	height: 200px;
-	width: 100%;
-	margin: 0px;
-	padding-left:23px;
-	}
 
 .narrowcolumn {
 	float:left;
@@ -336,7 +345,7 @@ a:hover {
 	}
 
 .widecolumn .postmetadata {
-	margin: 30px 0;
+	margin: 5px 0;
 	}
 
 .widecolumn .smallattachment {
@@ -359,11 +368,6 @@ a:hover {
 	clear: both;
 }
 
-
-h1 {
-	padding-top: 50px;
-	margin: 0;
-	}
 
 h1 {
 	font-size: 53px;
@@ -403,10 +407,7 @@ h2.pagetitle {
 	text-align: left;
 }
 
-h2, h2 a, h2 a:visited{
-	color:#000;
- 	}
-	
+
 
 #sidebar h2 {
 	margin: 5px 0 0;
@@ -460,7 +461,7 @@ img.alignleft {
 }
 
 #content p, #content ul, #content ol, #content dd, #content pre, #content hr {
-margin-bottom:24px;
+margin-bottom: 24px;
 }
  
 html>body .entry ul {
@@ -619,8 +620,9 @@ select {
 #sidebar {
 	float:left;
 	margin-left:10px;
-	margin-top:9px;
 	width:240px;
+	position: relative;
+	top: -130px;
 }
 
 #sidebarinner {
@@ -682,7 +684,20 @@ blockquote {
 	margin: 15px 30px 0 10px;
 	padding-left: 20px;
 	border-left: 5px solid #ddd;
+	border-radius: 7px;
 	}
+
+blockquote {
+  font: 14px/20px italic Times, serif;
+  padding: 8px;
+  background-color: rgba(255,255,255,1);
+  margin: 5px;
+  background-image: url('http://cdn.aquarionics.com/assets/open-quotes-icon.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 36px;
+  }
+  
 
 blockquote cite {
 	margin: 5px 0 0;
@@ -711,7 +726,6 @@ a img {
 	}
 
 .navigation {
-	color:#000;
 	display:block;
 	padding-left:20px;
 	padding-right:20px;
@@ -720,7 +734,6 @@ a img {
 	}
 	
 .navigation a:link, .navigation a:visited {
-	color:#000;
 	}
 
 
@@ -756,12 +769,43 @@ div.aligncenter {
 	margin: 0;
 }
 
-.roundedbox, .commentlist li {
-    background: rgba(255,255,255,.8);
-    border-radius: 20px;
+.roundedbox, .commentlist li, #sidebar .textwidget {
+    background: rgba(255,255,255,.7);
+    border-radius: 7px;
     color: black;
     padding: 10px;
     margin: 10px 0 10px 0;
+}
+
+.roundedbox {
+	color: black;
+}
+
+.postbg {
+    background: rgba(0,0,0,.4);
+    color: white;
+    border-radius: 7px;
+    box-shadow: 6px 6px 10px rgba(0,0,0,.5);
+}
+
+
+ h2.posttitle {
+ 	font-size: 35px;
+ 	padding-top: 5px;
+ }
+ 
+  h2.posttitle a {
+  	border: none;
+  }
+ 	
+.postbg small, .postbg .postmetadata {
+	padding-left: 10px;
+	margin-top: 0;
+	-webkit-margin-before: 0em;
+}
+
+.postbg h2 {
+	padding-left: 10px;
 }
 
 .commentlist {

@@ -4,7 +4,7 @@ get_header();
 
 	<div id="content" class="narrowcolumn" role="main">
 	
-	<div id="postbg">
+	<div class="postbg">
 				<div id="postheader"></div>
 				<div class="post">
 
@@ -32,7 +32,7 @@ get_header();
 			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 		</div>
-        <br style="clear: both"/>
+        <div style="clear: both; height: 1px;"/>
 		<?php while (have_posts()) : the_post(); ?>
 		<div id="test" class="roundedbox">
 				<h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -68,14 +68,15 @@ get_header();
 
 	endif;
 ?>
-</div>
 
 	<div id="postfooter"></div>
 
 </div>
+</div>
+
 
 	</div>
-
+	</div>
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

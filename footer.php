@@ -14,8 +14,9 @@
 <div id="basebar4" class="basebar">
     <?PHP dynamic_sidebar(5);?>
 </div>
-    
-	<p style='clear: both'>
+
+<div style=" text-align: center'">
+	<p style='clear: both;>
 		 <?php 
 		/**
 		 * This is where the credit for the theme is placed. 
@@ -27,12 +28,14 @@
 		 * however you like to.
 		*/
 		?>
-		<?php bloginfo('name'); ?><?php if(is_home() and !is_paged()) { ?> Design started with <a href="http://www.gutscheingiraffe.com/" title="Gutscheincode - Gutscheingiraffe">Gutscheincode <?php echo date('Y'); ?></a><?php } ?>, but has been utterly broken and reformed since then.<br/>
+		<?php bloginfo('name'); ?>'s Design started with <a href="http://www.gutscheingiraffe.com/" title="Gutscheincode - Gutscheingiraffe">Gutscheincode <?php echo date('Y'); ?></a>, but has been utterly broken and reformed since then.<br/>
 		<p>All content not otherwise attributed &copy; Nicholas Avenell 1999 to <?PHP echo date('Y') ?></p>
 		<p>Background image from Morguefile.com</p>
 		<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
-	</p>
 		<?php wp_footer(); ?>
+	</p>
+</div>
+		<br/>
 </div>
 </body>
 </html>
