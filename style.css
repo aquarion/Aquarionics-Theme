@@ -104,7 +104,7 @@ small {
 	}
 
 #headerimg { 
-	background: rgba(0,0,64,.6);
+	background: rgba(0,0,64,.6) url("http://art.istic.net/iconography/aqcom/logo_64.png") no-repeat 2% 50%;
 	width: 100%;
 	margin: 0px;
 	border-radius: 7px;
