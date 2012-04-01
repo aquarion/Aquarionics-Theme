@@ -26,6 +26,6 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'automatic-feed-links' );
 
 // This theme allows users to set a custom background
-add_custom_background();
+//add_custom_background();
  
 ?>
