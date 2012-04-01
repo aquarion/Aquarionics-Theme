@@ -18,6 +18,7 @@ body {
 	color: #333;
 	background-attachment:fixed;
 	background-image:url(images/bg.jpg);
+	background-position: 50% 50%;
 	margin: 0 0 0 0;
 	padding: 0;
 	font-family: sans-serif;
